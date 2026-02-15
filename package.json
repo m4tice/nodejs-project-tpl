@@ -34,7 +34,8 @@
 			"target": [
 				"dmg",
 				"zip"
-			]
+			],
+			"executableName": "electron-boilerplate"
 		},
 		"win": {
 			"target": [
@@ -42,7 +43,8 @@
 				"portable"
 			],
 			"forceCodeSigning": false,
-			"signAndEditExecutable": false
+			"signAndEditExecutable": false,
+			"executableName": "electron-boilerplate"
 		},
 		"nsis": {
 			"oneClick": false,
