@@ -1,0 +1,50 @@
+{
+	"name": "electron-boilerplate",
+	"version": "1.0.0",
+	"description": "A minimal Electron boilerplate starter",
+	"main": "src/main/main.js",
+	"scripts": {
+		"start": "electron .",
+		"build": "electron-builder",
+		"build:mac": "electron-builder --mac",
+		"build:win": "electron-builder --win",
+		"build:all": "electron-builder -mw",
+		"test": "sh scripts/test.sh",
+		"watch": "sh scripts/watch.sh",
+		"setup-hooks": "sh scripts/setup-hooks.sh"
+	},
+	"keywords": [
+		"electron",
+		"boilerplate"
+	],
+	"author": "",
+	"license": "ISC",
+	"type": "commonjs",
+	"devDependencies": {
+		"electron": "latest",
+		"electron-builder": "latest",
+		"nodemon": "latest"
+	},
+	"build": {
+		"appId": "com.electron.boilerplate",
+		"files": [
+			"src/**"
+		],
+		"mac": {
+			"target": [
+				"dmg",
+				"zip"
+			]
+		},
+		"win": {
+			"target": [
+				"nsis",
+				"portable"
+			]
+		},
+		"nsis": {
+			"oneClick": false,
+			"allowToChangeInstallationDirectory": true
+		}
+	}
+}
