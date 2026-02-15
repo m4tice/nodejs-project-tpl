@@ -40,7 +40,9 @@
 			"target": [
 				"nsis",
 				"portable"
-			]
+			],
+			"forceCodeSigning": false,
+			"signAndEditExecutable": false
 		},
 		"nsis": {
 			"oneClick": false,
